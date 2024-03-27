@@ -20,13 +20,13 @@ const fontDisplay = Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Photocaster',
-  description: 'A photographer focused Farcaster client supporting high res images',
+  title: 'Eventcaster',
+  description: 'A page showing all events happening in the space',
   openGraph: {
-    title: 'Photocaster',
-    description: 'A photographer focused Farcaster client supporting high res images',
+    title: 'Eventcaster',
+    description: 'A page showing all events happening in the space',
     url: 'https://photocaster.xyz',
-    siteName: 'Photocaster',
+    siteName: 'Eventcaster',
     images: [
       {
         url:`https://www.photocaster.xyz/og.png`,
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Photocaster',
-    description: 'A photographer focused Farcaster client supporting high res images',
+    title: 'Eventcaster',
+    description: 'A page showing all events happening in the space',
     creator: '@pinatacloud',
     images: ['https://www.photocaster.xyz/og.png'], // Must be an absolute URL
   },
