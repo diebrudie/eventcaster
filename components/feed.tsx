@@ -65,7 +65,7 @@ export default function Feed({ channel }: any) {
         feed.map((item: any, index: any) => (
           <FeedCard
             key={index}
-            image={item.castAddBody.embeds[0].url}
+            image={item?.castAddBody?.embeds[0]?.url}
             author={item.fid || "anon"}
             text={item.castAddBody.text} item={undefined}          />
         ))
