@@ -14,8 +14,8 @@ export function Nav({ setChannel }: any) {
     <div className="flex justify-between w-full items-center sm:w-[500px] mt-6">
       <Dialog>
         <div className="flex flex-col">
-          <h1 className="font-display sm:text-4xl text-3xl">Photocaster</h1>
-          <p>
+          <h1 className="font-display sm:text-4xl text-3xl text-black">Eventcaster</h1>
+          {/* <p>
             powered by{" "}
             <a
               href="https://pinata.cloud"
@@ -24,7 +24,7 @@ export function Nav({ setChannel }: any) {
             >
               Pinata
             </a>
-          </p>
+          </p> */}
         </div>
         <div className="flex gap-4">
           <ChannelSwitch setChannel={setChannel} />

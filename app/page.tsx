@@ -16,21 +16,18 @@ export default function Page({}: {
 }): JSX.Element {
   const [open, setOpen] = useState(false);
   const [channel, setChannel] = useState(
-    "chain://eip155:7777777/erc721:0x36ef4ed7a949ee87d5d2983f634ae87e304a9ea2",
+    "https://warpcast.com/~/channel/events",
   );
 
   const { farcasterUser, loading, startFarcasterSignerProcess, logout } =
     useFarcasterIdentity();
 
   return (
-    <div className="flex flex-col min-h-screen w-full sm:px-0 px-3 justify-center items-center gap-6 mb-6">
+    <div className="flex flex-col min-h-screen w-full bg-white items-center sm:px-0 px-3 gap-6 mb-6">
       <Dialog open={open} onOpenChange={setOpen}>
         <Nav setChannel={setChannel} />
         <Separator className="sm:w-[500px] w-sm" />
         <DialogTrigger asChild>
-          <Button className="sm:w-[500px] w-full mt-4" variant="outline">
-            +
-          </Button>
         </DialogTrigger>
         <Feed channel={channel} setChannel={setChannel} />
         <DialogContent className="sm:max-w-[425px] max-w-[375px]">

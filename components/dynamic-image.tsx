@@ -8,7 +8,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-export function DynamicImage({ image, author, text }: {image: string; author: string, text: string }) {
+export function DynamicImage({ item, image, author, text }: {item: any, image: string; author: string, text: string }) {
   const [imageUrl, setImageUrl] = useState(image);
   const [error, setError] = useState(false);
 
@@ -47,7 +47,8 @@ export function DynamicImage({ image, author, text }: {image: string; author: st
             </Tooltip>
           </TooltipProvider>
         </div>
-        <p className="font-bold text-gray-500">@{author}</p>
+        <p className="font-bold text-gray-500">{text}</p>
+
         <DialogContent className="sm:max-h-screen sm:max-w-screen max-w-screen max-h-screen overflow-scroll">
           <img
             src={rawUrl.toString()}
@@ -60,7 +61,8 @@ export function DynamicImage({ image, author, text }: {image: string; author: st
     );
   } else {
     return (
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 w-1/4 justify-center bg-red-300 p-5 text-b h-100 w-100">
+
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
@@ -76,8 +78,11 @@ export function DynamicImage({ image, author, text }: {image: string; author: st
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-
+        <p>{text}</p>
         <p className="font-bold text-gray-500">@{author}</p>
+        <div>
+          <button  className="bg-white text-black p-1">View Event</button>
+        </div>
       </div>
     );
   }
