@@ -21,7 +21,7 @@ export function DynamicImage({ item, image, author, text }: {item: any, image: s
     return null;
   }
 
-  if (image.includes("/ipfs")) {
+  if (image?.includes("/ipfs")) {
     let rawUrl = new URL(image);
     rawUrl.search = "";
 

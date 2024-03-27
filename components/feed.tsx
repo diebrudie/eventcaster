@@ -66,8 +66,8 @@ export default function Feed({ channel }: any) {
           <FeedCard
             key={index}
             image={item?.castAddBody?.embeds[0]?.url}
-            author={item.fid || "anon"}
-            text={item.castAddBody.text} item={undefined}          />
+            author={item?.fid || "anon"}
+            text={item?.castAddBody?.text} item={undefined}          />
         ))
       )}
       {loadingMore ? (
