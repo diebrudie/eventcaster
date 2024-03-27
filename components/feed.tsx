@@ -4,7 +4,7 @@ import { Loader2 } from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Feed({ channel }: any) {
-  const [feed, setFeed] = useState([]);
+  const [feed, setFeed] = useState([""]);
   const [loading, setLoading] = useState(false);
   const [loadingMore, setLoadingMore] = useState(false);
   const [nextPageToken, setNextPageToken] = useState("");
