@@ -23,7 +23,7 @@ export default function Page({}: {
     useFarcasterIdentity();
 
   return (
-    <div className="flex flex-col min-h-screen w-full bg-white items-center sm:px-0 px-3 gap-6 mb-6">
+    <div className="flex flex-col min-h-screen w-full bg-cyan-950 items-center sm:px-0 px-3 gap-6 mb-6">
       <Dialog open={open} onOpenChange={setOpen}>
         <Nav setChannel={setChannel} />
         <Separator className="sm:w-[500px] w-sm" />

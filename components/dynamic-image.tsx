@@ -81,7 +81,7 @@ export function DynamicImage({ item, image, author, text }: {item: any, image: s
         <p>{text}</p>
         <p className="font-bold text-gray-500">@{author}</p>
         <div>
-          <button  className="bg-white text-black p-1">View Event</button>
+          <button  className="bg-white text-black p-1">RSVP</button>
         </div>
       </div>
     );
